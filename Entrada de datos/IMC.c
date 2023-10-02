@@ -38,6 +38,22 @@ int main() {
     float imc = peso / estatura_final;
     printf("Hey, %s! sabias que tu IMC es de %f\n", nombre, imc);
 
+    //esta condicional evalua si el imc es saludable
+     if (imc < 18.5){
+        printf("Tu imc es de %f te recomiendo que comas mas frutas y verduras:)",imc);
+    }
+    else if (imc >18.5 & imc < 24.5){
+        printf("Tu imc es de %f estas en tu peso ideal sigue asi!:)");
+    }
+    else if (imc < 24.5 & imc < 29){
+        printf("Tu imc es de %f tienes sobre peso te recomiendo hacer ejercicio con regularidad!:)");
+    }
+    else if (imc >29 ){
+        printf("Tu imc es de %f tienes sobrepeso te recomiendo que hagas algo al respecto!:)");
+    }
+
+
+
 
 
     return 0;
