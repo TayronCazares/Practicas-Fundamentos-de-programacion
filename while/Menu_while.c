@@ -31,19 +31,27 @@ while (opcion!=5){
         case 1:;
             float peso_marte = peso*G_marte;
             printf("Hey %s tu peso en marte es %f kg\n",nombre,peso_marte);
+            printf("Puedes calcular tu peso en otro planeta denuevo! o salir :c\n\n");
             break;
         case 2:;
             float peso_jupiter = peso*G_jupiter;
             printf("Hey %s tu peso en jupiter es %f kg\n",nombre,peso_jupiter);
+            printf("Puedes calcular tu peso en otro planeta denuevo! o salir :c\n\n");
             break;
         case 3:;
             float peso_saturno = peso*G_saturno;
             printf("Hey %s tu peso en saturno es %f kg\n",nombre,peso_saturno);
+            printf("Puedes calcular tu peso en otro planeta denuevo! o salir :c\n\n");
             break;
 
         case 4:;
             float peso_venus = peso*G_venus;
             printf("Hey %s Tu peso en venus es %f kg\n",nombre,peso_venus);
+            printf("Puedes calcular tu peso en otro planeta denuevo! o salir :c\n\n");
+            break;
+
+        default:
+            printf("Adioooos");
             break;
 }
 }
@@ -51,4 +59,3 @@ while (opcion!=5){
 
 return 0;
 }
-
