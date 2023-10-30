@@ -102,8 +102,8 @@ int main() {
                     }
                     break;
                 case 'r':
-                    if (numero1 < 0) {
-                        printf("No se puede calcular la raiz cuadrada de un numero negativo.\n");
+                    if (numero1 <= 0) {
+                        printf("No se puede calcular la raiz cuadrada de un numero negativo o cero.\n");
                     } else {
                         resultado = raiz(numero1);
                         printf("La raíz de %i es %.2lf\n", numero1, resultado);
