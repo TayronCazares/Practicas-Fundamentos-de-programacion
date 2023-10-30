@@ -34,6 +34,13 @@ int potencia(int numero1, int numero2) {
     }
     return resultado;
 }
+int valorAbsoluto(double numero) {
+    if (numero < 0) {
+        return -numero;
+    } else {
+        return numero;
+    }
+}
 
 double raiz(int numero1) {
     double max = numero1;
@@ -49,14 +56,6 @@ double raiz(int numero1) {
         med = (max + min) / 2;
     }
     return med;
-}
-
-int valorAbsoluto(double numero) {
-    if (numero < 0) {
-        return -numero;
-    } else {
-        return numero;
-    }
 }
 
 int main() {
