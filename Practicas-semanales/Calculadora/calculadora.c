@@ -67,19 +67,21 @@ int main() {
     printf("Bienvenido a la calculadora\n");
 
     while (continuar) {
+        printf("Ingresa la opcion para la operacion que deseas realizar +, -, *, /, p (potencia), r (raiz), x para salir\n");
+        scanf(" %c", &opc);
+        if (opc == 'x' || numero1 == 'x') {
+            printf("Adiooooos");
+            continuar = 0;
+            break;
+        } else if (opc != '+' && opc != '-' && opc != '*' && opc != '/' && opc != 'p' && opc != 'r') {
+            printf("Operacion invalida!\n");
+            continue;
+        }
         printf("Ingresa un numero->");
         scanf("%i", &numero1);
         printf("(En caso de que necesites una potencia ingresa el exponente o raiz poner 0)\nIngresa un segundo numero->");
         scanf("%i", &numero2);
-        printf("Ingresa la opcion para la operacion que deseas realizar +, -, *, /, p (potencia), r (raiz), x para salir\n");
-        scanf(" %c", &opc);
 
-        if (opc == 'x' || numero1 == 'x') {
-            printf("Adiooooos");
-            continuar = 0;
-        } else if (opc != '+' && opc != '-' && opc != '*' && opc != '/' && opc != 'p' && opc != 'r') {
-            printf("Operacin invalida!\n");
-        } else {
             switch (opc) {
                 case '+':
                     resultado = suma(numero1, numero2);
@@ -114,9 +116,8 @@ int main() {
                     printf("El resultado de %i a la potencia %i es: %.2lf\n", numero1, numero2, resultado);
                     break;
             }
-        }
+        
     }
 
     return 0;
 }
-
