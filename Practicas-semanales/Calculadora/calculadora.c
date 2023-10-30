@@ -47,7 +47,7 @@ double raiz(int numero1) {
     double min = 0;
     double med = (max + min) / 2;
 
-    while (valorAbsoluto(med * med - numero1) > 0.0000001) {
+    while (abs(med * med - numero1) > 0.0000001) {
         if (med * med > numero1) {
             max = med;
         } else {
